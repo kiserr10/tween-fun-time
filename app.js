@@ -4,11 +4,18 @@ $(document).ready(function() {
 		$(".box-3").addClass("box-4");
 	});
 
+	const boxOne = document.querySelector(".box-1");
 	const boxTwo = document.querySelector(".box-2");
+	const boxThree = document.querySelector(".box-3");
 	const boxFour = document.querySelector(".box-4");
+
 
 	boxTwo.addEventListener("click", function(){
 		boxFour.classList.add("red");
+	});
+
+	boxFour.addEventListener("click", function(){
+		boxFour.classList.remove("red");
 	});
 
 
